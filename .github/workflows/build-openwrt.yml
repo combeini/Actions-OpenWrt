@@ -10,8 +10,8 @@ name: Build OpenWrt
 
 on:
   repository_dispatch:
-  release:
-    types: published
+  #release:
+  #  types: published
   push:
     branches:
       - master
@@ -23,7 +23,8 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  #REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/KFERMercer/OpenWrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
